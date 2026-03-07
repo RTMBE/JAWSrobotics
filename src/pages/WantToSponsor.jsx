@@ -1,55 +1,48 @@
-import { Link } from 'react-router-dom'
-
 const WantToSponsor = () => {
   const sponsorshipTiers = [
     {
-      name: 'Platinum',
-      amount: '$10,000+',
-      color: 'from-gray-300 to-gray-400',
+      name: 'Bronze',
+      amount: '$500',
+      color: 'from-orange-600 to-orange-800',
       benefits: [
-        'Prominent logo placement on robot',
-        'Large logo on team website and all marketing materials',
-        'Recognition at all competitions and events',
-        'Exclusive team updates and behind-the-scenes access',
-        'Invitation to private team demonstrations',
-        'Social media recognition and shoutouts',
-        'Naming rights opportunity',
-      ]
-    },
-    {
-      name: 'Gold',
-      amount: '$5,000 - $9,999',
-      color: 'from-yellow-400 to-yellow-600',
-      benefits: [
-        'Logo placement on robot',
-        'Medium logo on team website and marketing materials',
-        'Recognition at competitions',
-        'Regular team updates',
-        'Invitation to team events',
-        'Social media recognition',
+        'Instagram shoutout',
+        'Small logo on website',
+        'Small logo on team shirts',
       ]
     },
     {
       name: 'Silver',
-      amount: '$2,500 - $4,999',
+      amount: '$1,000',
       color: 'from-gray-400 to-gray-500',
       benefits: [
-        'Logo on team website',
-        'Recognition at competitions',
-        'Team updates and newsletters',
-        'Invitation to select team events',
-        'Social media mentions',
+        'Instagram shoutout',
+        'Small logo on website',
+        'Medium logo on team shirts',
+        'Small logo on robot',
       ]
     },
     {
-      name: 'Bronze',
-      amount: '$1,000 - $2,499',
-      color: 'from-orange-600 to-orange-800',
+      name: 'Gold',
+      amount: '$2,500',
+      color: 'from-yellow-400 to-yellow-600',
       benefits: [
-        'Name/logo on team website',
-        'Recognition in team materials',
-        'Team newsletters',
-        'Social media acknowledgment',
+        'Instagram shoutout',
+        'Small logo on website',
+        'Large logo on team shirts',
+        'Medium logo on robot',
+        'Banner logo at competitions',
+      ]
+    },
+    {
+      name: 'Platinum',
+      amount: '$5,000',
+      color: 'from-gray-300 to-gray-400',
+      benefits: [
+        'Instagram shoutout',
+        'Large logo on website',
+        'Large logo on team shirts',
+        'Large logo on robot',
+        'Banner logo at competitions',
       ]
     },
   ]
@@ -183,16 +176,46 @@ const WantToSponsor = () => {
         </div>
       </section>
 
-      {/* Call to Action */}
+      {/* Contact Information */}
       <section className="bg-gradient-to-r from-navy-700 to-electric-blue-600 text-white py-20">
         <div className="max-w-4xl mx-auto text-center px-4">
           <h2 className="text-4xl font-bold mb-6">Ready to Make a Difference?</h2>
           <p className="text-xl mb-8">
             Contact us today to discuss sponsorship opportunities and how we can partner together
           </p>
-          <Link to="/contact" className="bg-white text-navy-700 hover:bg-gray-100 font-semibold py-3 px-8 rounded-lg transition-all duration-300 inline-block">
-            Get in Touch
-          </Link>
+
+          {/* Contact Info */}
+          <div className="bg-white/10 backdrop-blur-sm rounded-lg p-8 max-w-2xl mx-auto">
+            <div className="space-y-6">
+              <div className="flex items-center justify-center space-x-3">
+                <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                  <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                </svg>
+                <a href="mailto:jawsrobotics@gmail.com" className="text-xl hover:text-electric-blue-300 transition-colors">
+                  jawsrobotics@gmail.com
+                </a>
+              </div>
+
+              <div className="flex items-center justify-center space-x-3">
+                <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
+                </svg>
+                <span className="text-xl">Sarasota, Florida</span>
+              </div>
+
+              <div className="pt-4 border-t border-white/20">
+                <p className="text-lg mb-3">Follow us on Instagram</p>
+                <div className="flex justify-center space-x-4">
+                  <a href="#" className="hover:text-electric-blue-300 transition-colors">
+                    <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </div>
