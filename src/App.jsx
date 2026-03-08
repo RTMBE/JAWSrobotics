@@ -3,7 +3,6 @@ import Header from './components/Header'
 import Footer from './components/Footer'
 import Home from './pages/Home'
 import About from './pages/About'
-import CAD from './pages/CAD'
 import Sponsors from './pages/Sponsors'
 import WantToSponsor from './pages/WantToSponsor'
 import Contact from './pages/Contact'
@@ -19,7 +18,6 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
-            <Route path="/cad" element={<CAD />} />
             <Route path="/sponsors" element={<Sponsors />} />
             <Route path="/want-to-sponsor" element={<WantToSponsor />} />
             <Route path="/contact" element={<Contact />} />

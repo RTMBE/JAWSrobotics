@@ -144,7 +144,7 @@ const Home = () => {
             </div>
             <h3 className="text-xl font-bold text-navy-700 mb-3">Compete</h3>
             <p className="text-gray-600">
-              We compete in regional and national FRC competitions, showcasing our skills and teamwork.
+              We compete in Rival Robotics competitions, showcasing our engineering skills against professionals.
             </p>
           </div>
         </div>

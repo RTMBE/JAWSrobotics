@@ -34,7 +34,6 @@ const Header = () => {
   const navLinks = [
     { name: 'Home', path: '/' },
     { name: 'About Us', path: '/about' },
-    { name: 'Our CAD', path: '/cad' },
     { name: 'Sponsors', path: '/sponsors' },
     { name: 'Want to Sponsor?', path: '/want-to-sponsor' },
     { name: 'Blog', path: '/blog' },
