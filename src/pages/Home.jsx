@@ -73,14 +73,15 @@ const Home = () => {
           <div>
             <h2 className="text-4xl font-bold text-navy-700 mb-6">Who We Are</h2>
             <p className="text-lg text-gray-700 mb-4 leading-relaxed">
-              JAWS Robotics is a competitive FIRST Robotics Competition (FRC) team
-              based in Sarasota, Florida. Founded in 2026, we're a 501(c)(3) nonprofit
-              through The Hack Foundation, dedicated to inspiring innovation through robotics.
+              JAWS Robotics is a competitive robotics team based in Sarasota, Florida.
+              Founded in 2026, we're a 501(c)(3) nonprofit through The Hack Foundation.
+              We compete in Rival Robotics, an ageless and limitless competition.
             </p>
             <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-              Our team of 4 dedicated members brings together expertise in coding, CAD,
-              manufacturing, finance, and photography. We're currently in our first year
-              of competition, designing and building our swerve drive robot.
+              Our team of 3 high school students brings together expertise in coding, CAD,
+              manufacturing, and finance. We're pioneering our way through competition against
+              adults, robotics mentors, and professional engineers—designing and building our
+              swerve drive robot to compete at the highest level.
             </p>
             <Link to="/about" className="btn-primary inline-block">
               Meet Our Team
@@ -152,9 +153,9 @@ const Home = () => {
       {/* Call to Action */}
       <section className="bg-gradient-to-r from-navy-700 to-electric-blue-600 text-white py-20">
         <div className="max-w-4xl mx-auto text-center px-4">
-          <h2 className="text-4xl font-bold mb-6">Ready to Support Innovation?</h2>
+          <h2 className="text-4xl font-bold mb-6">Ready to Support Our Team?</h2>
           <p className="text-xl mb-8">
-            Help us inspire the next generation of engineers and innovators
+            Help us build the most competitive robot and compete against professionals
           </p>
           <Link to="/want-to-sponsor" className="bg-white text-navy-700 hover:bg-gray-100 font-semibold py-3 px-8 rounded-lg transition-all duration-300 inline-block">
             Explore Sponsorship Opportunities

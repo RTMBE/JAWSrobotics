@@ -11,9 +11,9 @@ const Footer = () => {
           <div>
             <h3 className="text-white text-lg font-bold mb-4">JAWS Robotics</h3>
             <p className="text-sm leading-relaxed">
-              A competitive FRC robotics team dedicated to innovation, 
-              engineering excellence, and inspiring the next generation 
-              of STEM leaders.
+              A competitive robotics team dedicated to innovation and
+              engineering excellence. High school students competing in
+              Rival Robotics against adults and professionals.
             </p>
           </div>
 

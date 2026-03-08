@@ -54,7 +54,7 @@ const WantToSponsor = () => {
         <div className="section-container text-center">
           <h1 className="text-5xl md:text-6xl font-bold mb-6">Become a Sponsor</h1>
           <p className="text-xl max-w-3xl mx-auto">
-            Partner with JAWS Robotics and invest in the future of STEM education
+            Partner with JAWS Robotics and support high school students competing against professionals
           </p>
         </div>
       </section>
@@ -65,31 +65,31 @@ const WantToSponsor = () => {
           <h2 className="text-4xl font-bold text-navy-700 text-center mb-8">Why Sponsor JAWS Robotics?</h2>
           <div className="grid md:grid-cols-2 gap-8 mb-8">
             <div className="card p-6">
-              <h3 className="text-xl font-bold text-navy-700 mb-3">Community Impact</h3>
+              <h3 className="text-xl font-bold text-navy-700 mb-3">Support Young Innovators</h3>
               <p className="text-gray-700">
-                Support local students and help develop the next generation of engineers, 
-                programmers, and innovators in your community.
+                Support high school students competing in Rival Robotics, an ageless and limitless
+                competition where we face off against adults, mentors, and professional engineers.
               </p>
             </div>
             <div className="card p-6">
               <h3 className="text-xl font-bold text-navy-700 mb-3">Brand Visibility</h3>
               <p className="text-gray-700">
-                Gain exposure at competitions, events, and through our marketing channels, 
-                reaching thousands of students, families, and STEM enthusiasts.
+                Gain exposure at competitions and events through logo placements on our robot,
+                team shirts, website, and competition banners.
               </p>
             </div>
             <div className="card p-6">
               <h3 className="text-xl font-bold text-navy-700 mb-3">Talent Pipeline</h3>
               <p className="text-gray-700">
-                Connect with talented students who may become future employees, 
-                building relationships with motivated STEM learners.
+                Connect with talented high school students who are learning advanced engineering,
+                programming, and manufacturing skills by competing against professionals.
               </p>
             </div>
             <div className="card p-6">
               <h3 className="text-xl font-bold text-navy-700 mb-3">Tax Benefits</h3>
               <p className="text-gray-700">
-                Your sponsorship is tax-deductible as we are a registered non-profit 
-                organization dedicated to education.
+                Your sponsorship is tax-deductible as we are a registered 501(c)(3) nonprofit
+                organization through The Hack Foundation.
               </p>
             </div>
           </div>
@@ -130,12 +130,12 @@ const WantToSponsor = () => {
           <div className="space-y-6">
             <div className="flex items-start">
               <div className="w-12 h-12 bg-electric-blue-500 rounded-full flex items-center justify-center text-white font-bold text-xl mr-4 flex-shrink-0">
-                40%
+                50%
               </div>
               <div>
                 <h3 className="text-xl font-bold text-navy-700 mb-2">Robot Materials & Components</h3>
                 <p className="text-gray-700">
-                  High-quality materials, motors, electronics, and custom parts for building competitive robots
+                  High-quality materials, motors, electronics, and custom parts for building the most competitive robot possible
                 </p>
               </div>
             </div>
@@ -146,7 +146,7 @@ const WantToSponsor = () => {
               <div>
                 <h3 className="text-xl font-bold text-navy-700 mb-2">Competition & Travel</h3>
                 <p className="text-gray-700">
-                  Registration fees, transportation, and accommodations for regional and national competitions
+                  Registration fees, transportation, and accommodations for Rival Robotics competitions
                 </p>
               </div>
             </div>
@@ -157,18 +157,7 @@ const WantToSponsor = () => {
               <div>
                 <h3 className="text-xl font-bold text-navy-700 mb-2">Tools & Equipment</h3>
                 <p className="text-gray-700">
-                  Workshop tools, safety equipment, and technology for design and manufacturing
-                </p>
-              </div>
-            </div>
-            <div className="flex items-start">
-              <div className="w-12 h-12 bg-electric-blue-500 rounded-full flex items-center justify-center text-white font-bold text-xl mr-4 flex-shrink-0">
-                10%
-              </div>
-              <div>
-                <h3 className="text-xl font-bold text-navy-700 mb-2">Outreach & Education</h3>
-                <p className="text-gray-700">
-                  Community events, STEM workshops, and educational programs
+                  Workshop tools, safety equipment, and technology for advanced design and manufacturing
                 </p>
               </div>
             </div>

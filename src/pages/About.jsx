@@ -48,14 +48,13 @@ const About = () => {
           <h2 className="text-4xl font-bold text-navy-700 text-center mb-8">Our Mission</h2>
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
             JAWS Robotics is a 501(c)(3) nonprofit organization through The Hack Foundation,
-            dedicated to inspiring innovation through robotics and STEM education. Based in
-            Sarasota, Florida, we participate in the FIRST Robotics Competition to develop
-            technical skills, leadership abilities, and a passion for engineering.
+            based in Sarasota, Florida. We compete in Rival Robotics, an ageless and limitless
+            competition where we can use any materials we want to build the most competitive robot possible.
           </p>
           <p className="text-lg text-gray-700 leading-relaxed">
             Our team of 3 dedicated members brings together expertise in coding, CAD design,
-            manufacturing, and finance. We believe in hands-on learning and
-            real-world problem-solving while fostering values of gracious professionalism and teamwork.
+            manufacturing, and finance. We focus 100% on building the best robot we can,
+            pushing the boundaries of engineering and innovation.
           </p>
         </div>
       </section>
@@ -67,18 +66,20 @@ const About = () => {
           <div className="space-y-6 text-lg text-gray-700 leading-relaxed">
             <p>
               Founded in 2026, JAWS Robotics is a brand new team based in Sarasota, Florida.
-              We're a passionate group of 3 students who came together with a shared vision:
-              to compete in the FIRST Robotics Competition and push the boundaries of what we can achieve.
+              We're a passionate group of 3 high school students who came together with a bold vision:
+              to compete in Rival Robotics and prove ourselves against adults, robotics mentors, and professional engineers.
+            </p>
+            <p>
+              Rival Robotics is an ageless and limitless competition—there are no restrictions on age,
+              materials, or design. This means we're going head-to-head with experienced professionals
+              and seasoned teams. As high school students, we're pioneering our way through this challenge,
+              learning advanced engineering, manufacturing, and programming skills at an accelerated pace.
             </p>
             <p>
               This is our first year competing, and we're already making significant progress.
-              We're currently designing our swerve drive system and working on our year budget.
-              Every day brings new challenges and learning opportunities as we build our robot from the ground up.
-            </p>
-            <p>
-              As a 501(c)(3) nonprofit through The Hack Foundation, we're committed to not just
-              building robots, but building skills, friendships, and a foundation for future success
-              in STEM fields. This is just the beginning of our journey.
+              We're currently designing our swerve drive system and managing our budget to maximize
+              robot performance. Every dollar of funding goes directly into building the most competitive
+              robot possible. This is just the beginning of our journey.
             </p>
           </div>
         </div>
