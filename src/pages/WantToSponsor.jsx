@@ -31,7 +31,7 @@ const WantToSponsor = () => {
         'Large logo on website',
         'Large logo on team shirts',
         'Medium logo on robot',
-        'Banner logo at competitions',
+        'Medium banner logo at competitions',
       ]
     },
     {
@@ -43,7 +43,7 @@ const WantToSponsor = () => {
         'Extra large logo on website',
         'Large logo on team shirts',
         'Large logo on robot',
-        'Banner logo at competitions',
+        'Large banner logo at competitions',
       ]
     },
   ]
