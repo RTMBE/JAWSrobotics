@@ -8,6 +8,7 @@ const WantToSponsor = () => {
         'Instagram shoutout',
         'Small logo on website',
         'Small logo on team shirts',
+        'Small logo on robot',
       ]
     },
     {
@@ -16,7 +17,7 @@ const WantToSponsor = () => {
       color: 'from-gray-400 to-gray-500',
       benefits: [
         'Instagram shoutout',
-        'Small logo on website',
+        'Medium logo on website',
         'Medium logo on team shirts',
         'Small logo on robot',
       ]
@@ -27,7 +28,7 @@ const WantToSponsor = () => {
       color: 'from-yellow-400 to-yellow-600',
       benefits: [
         'Instagram shoutout',
-        'Small logo on website',
+        'Large logo on website',
         'Large logo on team shirts',
         'Medium logo on robot',
         'Banner logo at competitions',
@@ -39,7 +40,7 @@ const WantToSponsor = () => {
       color: 'from-gray-300 to-gray-400',
       benefits: [
         'Instagram shoutout',
-        'Large logo on website',
+        'Extra large logo on website',
         'Large logo on team shirts',
         'Large logo on robot',
         'Banner logo at competitions',
