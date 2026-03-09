@@ -12,7 +12,12 @@ const Blog = () => {
   const loadBlogPosts = async () => {
     try {
       const data = await getBlogPosts()
-      setPosts(data)
+      if (data && data.length > 0) {
+        setPosts(data)
+      } else {
+        // No posts in database, use defaults
+        setPosts(getDefaultPosts())
+      }
     } catch (error) {
       console.error('Error loading blog posts:', error)
       // Use default posts if database is not set up yet
