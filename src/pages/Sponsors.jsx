@@ -12,6 +12,12 @@ const Sponsors = () => {
   }, [])
 
   const loadSponsors = async () => {
+    // TEMPORARY: Always use default sponsors until database is updated
+    // TODO: Remove this and uncomment the database code below once Supabase is updated
+    setSponsors(getDefaultSponsors())
+    setLoading(false)
+
+    /*
     try {
       const data = await getSponsors()
       setSponsors(data)
@@ -22,6 +28,7 @@ const Sponsors = () => {
     } finally {
       setLoading(false)
     }
+    */
   }
 
   const getDefaultSponsors = () => [

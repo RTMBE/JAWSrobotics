@@ -3,7 +3,7 @@ title: Major Progress on Swerve Drive CAD Design
 author: Maksym - CAD Lead
 date: 2026-03-09T16:00:00Z
 category: Technical
-image: /photos/cad/photo1.png
+image: /photos/blog/swerve-side-view.png
 ---
 
 We're thrilled to announce significant progress on our custom swerve drive system! Yesterday, our lead CAD designer Maksym made substantial headway on the mechanical design of our swerve modules.
