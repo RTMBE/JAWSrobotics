@@ -10,6 +10,12 @@ const Blog = () => {
   }, [])
 
   const loadBlogPosts = async () => {
+    // TEMPORARY: Always use default posts until database is updated with March 9 posts
+    // TODO: Remove this and uncomment the database code below once Supabase is updated
+    setPosts(getDefaultPosts())
+    setLoading(false)
+
+    /*
     try {
       const data = await getBlogPosts()
       if (data && data.length > 0) {
@@ -25,6 +31,7 @@ const Blog = () => {
     } finally {
       setLoading(false)
     }
+    */
   }
 
   const getDefaultPosts = () => [
