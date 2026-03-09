@@ -17,16 +17,15 @@ const PLACEHOLDER_IMAGES = {
  * Load photos from a specific folder
  * @param {string} folderName - Name of the folder (e.g., 'home', 'cad', 'team')
  * @param {number} count - Number of photos to load
+ * @param {string} extension - File extension ('jpg', 'png', or 'auto' to try both)
  * @returns {Array} Array of photo URLs
  */
-export const loadPhotos = (folderName, count = 6) => {
+export const loadPhotos = (folderName, count = 6, extension = 'jpg') => {
   const photos = []
 
   // Try to load actual photos from public folder
-  // Check for both .png and .jpg extensions
   for (let i = 1; i <= count; i++) {
-    // Try PNG first (common for logos), then JPG
-    const photoPath = `/photos/${folderName}/photo${i}.png`
+    const photoPath = `/photos/${folderName}/photo${i}.${extension}`
     photos.push(photoPath)
   }
 
@@ -71,7 +70,7 @@ export const loadCADPhotos = () => {
  * @returns {Array} Array of sponsor logo URLs
  */
 export const loadSponsorLogos = () => {
-  return loadPhotos('sponsors', 10)
+  return loadPhotos('sponsors', 10, 'png')
 }
 
 /**
