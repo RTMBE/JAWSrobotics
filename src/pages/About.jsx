@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
 import { getTeamMembers } from '../lib/supabase'
 import { loadTeamPhotos, handleImageError } from '../utils/photoLoader'
 
@@ -158,6 +159,30 @@ const About = () => {
             ))}
           </div>
         )}
+      </section>
+
+      {/* Sponsors Section */}
+      <section className="section-container bg-white">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-4xl font-bold text-navy-700 mb-6">Supported By</h2>
+          <p className="text-lg text-gray-700 mb-12">
+            We're grateful for the support of our sponsors who believe in our mission
+          </p>
+
+          <div className="flex justify-center mb-8">
+            <div className="card p-8 hover:shadow-2xl transition-shadow duration-300" style={{ maxWidth: '350px' }}>
+              <img
+                src="/photos/sponsors/New Odrive Logo.png"
+                alt="ODrive Robotics - Platinum Sponsor"
+                className="w-full h-auto object-contain"
+              />
+            </div>
+          </div>
+
+          <Link to="/sponsors" className="btn-primary inline-block">
+            View All Sponsors
+          </Link>
+        </div>
       </section>
     </div>
   )

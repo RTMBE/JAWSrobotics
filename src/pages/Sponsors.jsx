@@ -25,7 +25,7 @@ const Sponsors = () => {
   }
 
   const getDefaultSponsors = () => [
-    { id: 1, name: 'ODRIVEBots', tier: 'platinum', logo: sponsorLogos[0] },
+    { id: 1, name: 'ODrive Robotics', tier: 'platinum', logo: '/photos/sponsors/New Odrive Logo.png' },
   ]
 
   const groupedSponsors = {
@@ -74,13 +74,13 @@ const Sponsors = () => {
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-bold text-navy-700 mb-6">Thank You!</h2>
           <p className="text-lg text-gray-700 leading-relaxed mb-4">
-            JAWS Robotics would not be possible without the generous support of our sponsors. 
-            Your contributions enable us to purchase materials, attend competitions, and provide 
-            our students with invaluable hands-on STEM education experiences.
+            JAWS Robotics would not be possible without the generous support of our sponsors.
+            Your contributions enable us to purchase materials, attend Rival Robotics competitions,
+            and build the most competitive robot possible.
           </p>
           <p className="text-lg text-gray-700 leading-relaxed">
-            We are deeply grateful for your partnership and commitment to inspiring the next 
-            generation of engineers, innovators, and leaders.
+            We are deeply grateful for your partnership and commitment to supporting high school
+            students competing against adults and professional engineers.
           </p>
         </div>
       </section>
@@ -117,21 +117,21 @@ const Sponsors = () => {
             <div className="text-5xl mb-4">🤖</div>
             <h3 className="text-xl font-bold text-navy-700 mb-3">Robot Development</h3>
             <p className="text-gray-600">
-              Funding materials, tools, and components for building competitive robots
+              Funding materials, tools, and components for building the most competitive robot
             </p>
           </div>
           <div className="card p-8 text-center">
-            <div className="text-5xl mb-4">🎓</div>
-            <h3 className="text-xl font-bold text-navy-700 mb-3">Student Education</h3>
+            <div className="text-5xl mb-4">⚙️</div>
+            <h3 className="text-xl font-bold text-navy-700 mb-3">Advanced Equipment</h3>
             <p className="text-gray-600">
-              Providing hands-on STEM learning opportunities for students
+              Providing cutting-edge tools and technology to compete against professionals
             </p>
           </div>
           <div className="card p-8 text-center">
             <div className="text-5xl mb-4">🏆</div>
             <h3 className="text-xl font-bold text-navy-700 mb-3">Competition Success</h3>
             <p className="text-gray-600">
-              Enabling travel to regional and national competitions
+              Enabling travel to Rival Robotics competitions
             </p>
           </div>
         </div>
@@ -142,7 +142,7 @@ const Sponsors = () => {
         <div className="max-w-4xl mx-auto text-center px-4">
           <h2 className="text-4xl font-bold mb-6">Interested in Sponsoring?</h2>
           <p className="text-xl mb-8">
-            Join our community of supporters and help shape the future of STEM education
+            Join ODrive Robotics and other supporters in helping high school students compete against professionals
           </p>
           <a href="/want-to-sponsor" className="bg-white text-navy-700 hover:bg-gray-100 font-semibold py-3 px-8 rounded-lg transition-all duration-300 inline-block">
             Learn About Sponsorship Opportunities

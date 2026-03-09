@@ -150,6 +150,34 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Sponsors Section */}
+      <section className="section-container bg-white">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-4xl font-bold text-navy-700 mb-6">Our Sponsors</h2>
+          <p className="text-lg text-gray-700 mb-12">
+            Thank you to our amazing sponsors who make our success possible
+          </p>
+
+          {/* Platinum Sponsor - ODrive */}
+          <div className="mb-12">
+            <h3 className="text-2xl font-bold text-navy-700 mb-8">Platinum Sponsor</h3>
+            <div className="flex justify-center">
+              <div className="card p-8 hover:shadow-2xl transition-shadow duration-300" style={{ maxWidth: '400px' }}>
+                <img
+                  src="/photos/sponsors/New Odrive Logo.png"
+                  alt="ODrive Robotics"
+                  className="w-full h-auto object-contain"
+                />
+              </div>
+            </div>
+          </div>
+
+          <Link to="/sponsors" className="btn-primary inline-block">
+            View All Sponsors
+          </Link>
+        </div>
+      </section>
+
       {/* Call to Action */}
       <section className="bg-gradient-to-r from-navy-700 to-electric-blue-600 text-white py-20">
         <div className="max-w-4xl mx-auto text-center px-4">
