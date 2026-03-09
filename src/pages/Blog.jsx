@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { getBlogPosts } from '../lib/supabase'
+import { loadBlogPosts as loadMarkdownPosts } from '../utils/blogLoader'
 
 const Blog = () => {
   const [posts, setPosts] = useState([])
@@ -10,28 +10,17 @@ const Blog = () => {
   }, [])
 
   const loadBlogPosts = async () => {
-    // TEMPORARY: Always use default posts until database is updated with March 9 posts
-    // TODO: Remove this and uncomment the database code below once Supabase is updated
-    setPosts(getDefaultPosts())
-    setLoading(false)
-
-    /*
     try {
-      const data = await getBlogPosts()
-      if (data && data.length > 0) {
-        setPosts(data)
-      } else {
-        // No posts in database, use defaults
-        setPosts(getDefaultPosts())
-      }
+      // Load blog posts from markdown files in /public/blog-posts/
+      const data = await loadMarkdownPosts()
+      setPosts(data)
     } catch (error) {
       console.error('Error loading blog posts:', error)
-      // Use default posts if database is not set up yet
+      // Fallback to default posts if markdown loading fails
       setPosts(getDefaultPosts())
     } finally {
       setLoading(false)
     }
-    */
   }
 
   const getDefaultPosts = () => [
