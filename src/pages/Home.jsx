@@ -1,10 +1,11 @@
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import { loadHeroImages, handleImageError } from '../utils/photoLoader'
+import { loadHeroImages, loadSponsorLogos, handleImageError } from '../utils/photoLoader'
 
 const Home = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0)
   const heroImages = loadHeroImages()
+  const sponsorLogos = loadSponsorLogos()
 
   // Auto-rotate hero images
   useEffect(() => {
@@ -164,9 +165,10 @@ const Home = () => {
             <div className="flex justify-center">
               <div className="card p-8 hover:shadow-2xl transition-shadow duration-300" style={{ maxWidth: '400px' }}>
                 <img
-                  src="/photos/sponsors/New Odrive Logo.png"
+                  src={sponsorLogos[0]}
                   alt="ODrive Robotics"
                   className="w-full h-auto object-contain"
+                  onError={(e) => handleImageError(e, 'sponsor')}
                 />
               </div>
             </div>

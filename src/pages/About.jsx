@@ -1,12 +1,13 @@
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { getTeamMembers } from '../lib/supabase'
-import { loadTeamPhotos, handleImageError } from '../utils/photoLoader'
+import { loadTeamPhotos, loadSponsorLogos, handleImageError } from '../utils/photoLoader'
 
 const About = () => {
   const [teamMembers, setTeamMembers] = useState([])
   const [loading, setLoading] = useState(true)
   const teamPhotos = loadTeamPhotos()
+  const sponsorLogos = loadSponsorLogos()
 
   useEffect(() => {
     loadTeamMembers()
@@ -172,9 +173,10 @@ const About = () => {
           <div className="flex justify-center mb-8">
             <div className="card p-8 hover:shadow-2xl transition-shadow duration-300" style={{ maxWidth: '350px' }}>
               <img
-                src="/photos/sponsors/New Odrive Logo.png"
+                src={sponsorLogos[0]}
                 alt="ODrive Robotics - Platinum Sponsor"
                 className="w-full h-auto object-contain"
+                onError={(e) => handleImageError(e, 'sponsor')}
               />
             </div>
           </div>

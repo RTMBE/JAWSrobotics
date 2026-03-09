@@ -25,7 +25,7 @@ const Sponsors = () => {
   }
 
   const getDefaultSponsors = () => [
-    { id: 1, name: 'ODrive Robotics', tier: 'platinum', logo: '/photos/sponsors/New Odrive Logo.png' },
+    { id: 1, name: 'ODrive Robotics', tier: 'platinum', logo: sponsorLogos[0] },
   ]
 
   const groupedSponsors = {
