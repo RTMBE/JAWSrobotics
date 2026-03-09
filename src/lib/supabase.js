@@ -81,6 +81,11 @@ export const getContactSubmissions = async () => {
  * @returns {Promise} Array of blog posts
  */
 export const getBlogPosts = async () => {
+  // If Supabase is not configured, throw error to trigger fallback
+  if (!supabase) {
+    throw new Error('Supabase not configured')
+  }
+
   const { data, error } = await supabase
     .from('blog_posts')
     .select('*')
