@@ -21,19 +21,15 @@ const PLACEHOLDER_IMAGES = {
  */
 export const loadPhotos = (folderName, count = 6) => {
   const photos = []
-  
+
   // Try to load actual photos from public folder
+  // Check for both .png and .jpg extensions
   for (let i = 1; i <= count; i++) {
-    try {
-      // Attempt to load from public/photos/{folderName}/photo{i}.jpg
-      const photoPath = `/photos/${folderName}/photo${i}.jpg`
-      photos.push(photoPath)
-    } catch (error) {
-      // If photo doesn't exist, use placeholder
-      photos.push(getPlaceholder(folderName))
-    }
+    // Try PNG first (common for logos), then JPG
+    const photoPath = `/photos/${folderName}/photo${i}.png`
+    photos.push(photoPath)
   }
-  
+
   return photos
 }
 
