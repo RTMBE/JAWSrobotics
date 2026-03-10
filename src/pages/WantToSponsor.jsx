@@ -2,18 +2,17 @@ const WantToSponsor = () => {
   const sponsorshipTiers = [
     {
       name: 'Bronze',
-      amount: '$500',
+      amount: '$500+',
       color: 'from-orange-600 to-orange-800',
       benefits: [
         'Instagram shoutout',
         'Small logo on website',
         'Small logo on team shirts',
-        'Small logo on robot',
       ]
     },
     {
       name: 'Silver',
-      amount: '$1,000',
+      amount: '$1000+',
       color: 'from-gray-400 to-gray-500',
       benefits: [
         'Instagram shoutout',
@@ -24,26 +23,26 @@ const WantToSponsor = () => {
     },
     {
       name: 'Gold',
-      amount: '$2,500',
+      amount: '$2000+',
       color: 'from-yellow-400 to-yellow-600',
       benefits: [
         'Instagram shoutout',
         'Large logo on website',
         'Large logo on team shirts',
-        'Medium logo on robot',
-        'Medium banner logo at competitions',
+        'Medium logo on the robot',
+        'Medium banner logo itions',
       ]
     },
     {
       name: 'Platinum',
-      amount: '$5,000',
-      color: 'from-gray-300 to-gray-400',
+      amount: '$4000+',
+      color: 'from-cyan-400 to-cyan-600',
       benefits: [
         'Instagram shoutout',
-        'Extra large logo on website',
+        'Extra-large logo on website',
         'Large logo on team shirts',
-        'Large logo on robot',
-        'Large banner logo at competitions',
+        'Large logo on the robot',
+        'Large banner',
       ]
     },
   ]
