@@ -23,7 +23,7 @@ const WantToSponsor = () => {
     },
     {
       name: 'Gold',
-      amount: '$2000+',
+      amount: '$2500+',
       color: 'from-yellow-400 to-yellow-600',
       benefits: [
         'Instagram shoutout',
